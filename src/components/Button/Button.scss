@@ -1,0 +1,28 @@
+@import "../../Colors.scss";
+
+.Button {
+  color: black;
+  width: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: none;
+  box-shadow: 1px 5px 5px black;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    box-shadow: 5px 5px 6px white;
+  }
+
+  &.success {
+    background-color: $success-color;
+  }
+  &.error {
+    background-color: $error-color;
+  }
+  &.info {
+    background-color: $info-color;
+  }
+}
