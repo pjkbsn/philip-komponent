@@ -1,6 +1,8 @@
 @import "../../Colors.scss";
 
 .toast {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -9,12 +11,12 @@
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
+  width: fit-content;
 
   &.success {
     background-color: $success-color;
     // left: 20%;
     bottom: 2.4rem;
-    width: 5rem;
     animation: myAnim 3s linear 0s 1 normal none;
   }
 
@@ -22,14 +24,12 @@
     background-color: $error-color;
     // left: 40%;
     bottom: 4.8rem;
-    width: 5rem;
     animation: myError 2s ease 0s 3 normal none;
   }
 
   &.info {
     background-color: $info-color;
     // left: 60%;
-    width: 5rem;
     animation: myAnim 3s linear 0s 1 normal none;
   }
 }

@@ -2,13 +2,11 @@ import "./Button.scss";
 
 type ButtonProps = {
   clickEvent: React.MouseEventHandler<HTMLButtonElement>;
-  type: string;
-  children: string;
 };
 
-const Button = ({ clickEvent, type, children }: ButtonProps) => (
-  <button className={`Button ${type}`} onClick={clickEvent}>
-    {children}
+const Button = ({ clickEvent }: ButtonProps) => (
+  <button className={`Button`} onClick={clickEvent}>
+    X
   </button>
 );
 

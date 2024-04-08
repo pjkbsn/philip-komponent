@@ -4,9 +4,9 @@ import "./styles.scss";
 const App = () => {
   return (
     <>
-      <Toast message="Success" duration={6000} type="success" />
-      <Toast message="ERROR" duration={6000} type="error" />
-      <Toast message="InfoRuta" duration={6000} type="info" />
+      <Toast message="Success" type="success" />
+      <Toast message="ERROR" type="error" />
+      <Toast message="InfoRutaheheheheheheeheh" type="info" />
     </>
   );
 };

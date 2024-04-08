@@ -4,25 +4,21 @@ import { useState } from "react";
 
 type ToastProps = {
   message: string;
-  duration: number;
   type: "success" | "error" | "info";
 };
 
-const Toast: React.FC<ToastProps> = ({ message, type, duration }) => {
-  const [visible, setVisible] = useState(false);
+const Toast: React.FC<ToastProps> = ({ message, type }) => {
+  const [visible, setVisible] = useState(true);
 
   const handleClick = () => {
-    setVisible(true);
-    setTimeout(() => setVisible(false), duration);
+    setVisible(false);
   };
 
   return (
     <>
-      <Button clickEvent={handleClick} type={type}>
-        {type}
-      </Button>
       {visible && (
         <div className={`toast ${type}`}>
+          <Button clickEvent={handleClick} />
           <span>{message}</span>
         </div>
       )}

@@ -1,3 +1,3 @@
 # Toast Komponent
 
-En toast-komponent är ett snyggt sätt att visa upp ett meddelande för användaren ifall något har hänt.
+En toast-komponent kommer upp när något t.ex. har lyckats/misslyckats som ett pop-up meddelande.
