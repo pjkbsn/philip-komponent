@@ -11,11 +11,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  position: fixed;
+  left: 0;
 
   &:hover,
   &.expanded {
     width: 20rem;
-    position: relative;
+    position: fixed;
 
     .sidebar ul {
       max-height: 100vh;
