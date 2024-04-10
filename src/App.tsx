@@ -1,4 +1,5 @@
 import { Accordion } from "./components/Accordion/Accordion";
+import { RadioButton } from "./components/RadioButton/RadioButton";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Toast from "./components/Toast/Toast";
 import "./styles.scss";
@@ -22,6 +23,19 @@ const App = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem sunt dolor? Quos laborum repellendus eveniet sint. Natus, eligendi, quae, deleniti eveniet maiores eos perferendis aliquid impedit tenetur recusandae molestias.",
     },
   ];
+
+  const radioData = [
+    {
+      name: "Option 1",
+    },
+    {
+      name: "Option 2",
+    },
+    {
+      name: "Option 3",
+    },
+  ];
+
   return (
     <>
       <Sidebar items={items} />
@@ -29,6 +43,7 @@ const App = () => {
       <Toast message="ERROR" type="error" />
       <Toast message="InfoRutaheheheheheheeheh" type="info" />
       <Accordion data={data} />
+      <RadioButton data={radioData} />
     </>
   );
 };
