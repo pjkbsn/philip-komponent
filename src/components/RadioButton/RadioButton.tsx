@@ -5,23 +5,26 @@ type RadioProps = {
 };
 
 export const RadioButton = ({ data }: RadioProps) => {
+  const handleClick = (i) => {
+    console.log(`Klickade på ${i}`);
+  };
+
   return (
-    <>
-      <fieldset>
-        <legend>Select an option</legend>
-        {data.map((name, i) => (
-          <div key={i} className="wrapper">
-            <label htmlFor={`${name.name}`} className="radiolabel">{name.name}</label>
-            <input
-              type="radio"
-              id={`${name.name}`}
-              value={`${name.name}`}
-              name="radio"
-              className="radioinput"
-            />
-          </div>
-        ))}
-      </fieldset>
-    </>
+    <fieldset className="RadioButton">
+      <legend>Select an option</legend>
+      {data.map((name, i) => (
+        <div key={i} className="radioWrapper">
+          <label
+            htmlFor={`radio_${i}`}
+            onClick={() => {
+              handleClick(i);
+            }}
+          >
+            {name.name}
+          </label>
+          <input type="radio" id={`radio_${i}`} name="radio" />
+        </div>
+      ))}
+    </fieldset>
   );
 };
