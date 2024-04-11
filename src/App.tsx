@@ -1,4 +1,5 @@
 import { Accordion } from "./components/Accordion/Accordion";
+import { NotAButton } from "./components/NotAButton/NotAButton";
 import { RadioButton } from "./components/RadioButton/RadioButton";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Toast from "./components/Toast/Toast";
@@ -44,6 +45,7 @@ const App = () => {
       <Toast message="InfoRutaheheheheheheeheh" type="info" />
       <Accordion data={data} />
       <RadioButton data={radioData} />
+      <NotAButton text="CLICK ME!!" />
     </>
   );
 };
