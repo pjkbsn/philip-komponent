@@ -1,4 +1,5 @@
 import { Accordion } from "./components/Accordion/Accordion";
+import { InputField } from "./components/InputField/InputField";
 import { NotAButton } from "./components/NotAButton/NotAButton";
 import { RadioButton } from "./components/RadioButton/RadioButton";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -46,6 +47,7 @@ const App = () => {
       <Accordion data={data} />
       <RadioButton data={radioData} />
       <NotAButton text="CLICK ME!!" />
+      <InputField />
     </>
   );
 };

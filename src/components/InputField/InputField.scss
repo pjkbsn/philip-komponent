@@ -1,0 +1,55 @@
+.inputField {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .inputButton {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 6rem;
+    height: 2rem;
+    background-color: rgba(128, 128, 128, 0.644);
+    transition: background-color 200ms ease;
+    &.enabled {
+      animation: buttonBounce 200ms;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+
+      &:hover {
+        box-shadow: 0 0 0.5rem 0.2rem white;
+      }
+
+      &:active {
+        box-shadow: 0 0 0.5rem 0.5rem white;
+      }
+    }
+  }
+
+  .listContainer {
+    height: 20rem;
+    overflow-y: scroll;
+    .listItem {
+      list-style-type: none;
+      border: 1px black solid;
+      padding: 0.2rem;
+      min-width: 5rem;
+      text-align: center;
+      margin: 0.2rem;
+      transform: translateY(0);
+    }
+  }
+}
+
+@keyframes buttonBounce {
+  0%,
+  50%,
+  100% {
+    transform: translateY(-4%);
+  }
+  25%,
+  75% {
+    transform: translateY(4%);
+  }
+}
